@@ -17,90 +17,83 @@ export const projectsData = [
 		githubUrl: '',
 		ProjectHeader: {
 			title: 'AI-Based Gym Personal Trainer',
-			publishDate: 'Jul 26, 2021',
+			publishDate: 'Jul 26, 2024',
 			tags: ['Side Project', 'GenAI', 'Multimodal'],
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
 				title: 'Gym Personal Trainer',
-				img: '/images/ui-project-1.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/neural-style-transfer.png',
-			},
-			{
-				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/mobile-project-2.jpg',
+				img: '/images/gym-trainer.png',
 			},
 		],
 		ProjectInfo: {
-			ClientHeading: 'About Client',
+			ClientHeading: 'About Project',
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
+					title: 'Timeline',
+					details: 'Apr-Sep 2024',
 				},
 				{
 					id: uuidv4(),
-					title: 'Services',
-					details: 'Web Development',
+					title: 'Format',
+					details: 'Webapp',
 				},
 				{
 					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
+					title: 'Status',
+					details: 'On-hold after Beta phase',
 				},
 				{
 					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
+					title: 'Team Size',
+					details: '2',
+				},
+				{
+					id: uuidv4(),
+					title: 'My Role',
+					details: 'PM, AI Engineer',
 				},
 			],
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+				'AI-powered tool that analyzes video recordings of strength exercises to provide personalized feedback, helping users improve performance and reduce injury risk.',
 			Technologies: [
 				{
 					title: 'Tools & Technologies',
 					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
+						'Multimodal models (Gemini Flash)',
+						'Embeddings',
+						'Prompt Engineering',
+						'Ionic Framework',
 					],
 				},
 			],
-			ProjectDetailsHeading: 'Challenge',
+			ProjectDetailsHeading: 'Challenge, Solution, Lessons Learnt and Next Steps',
 			ProjectDetails: [
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'Many people want to improve their fitness but can’t afford a personal trainer. This causes that they often perform exercises incorrectly, leading to injuries and suboptimal results.',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'The goal was to create an AI-powered tool that analyzes video recordings of strength exercises to provide personalized feedback, helping users improve performance and reduce injury risk. In order to do this, two main AI-based components were developed:',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'1. Exercise Recognition: A multimodal model that classifies the exercise being performed in a video. Surprisingly, this was the most challenging piece of the project. For Beta phase (family and friends only), I tried both Gemini Flash 1.5 with lots of prompt engineering and chain-of-thought (no fine-tuning) and Embeddings. None of these approaches worked well enough for production (~50% accuracy in exercise classification on a video library of 250+ exercises).',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'2. Exercise Feedback: A multimodal model that provides personalized feedback on the exercise performance, comparing the user video to a reference video. This was the most successful part of the project. We used Gemini Flash 1.5 with prompt engineering. The model was able to provide detailed feedback on the exercise performance with ~90% accuracy. Feedback included the following categories: Form/technique, Tempo, Range of Movement, Fatigue Analysis (comparing the variation of the execution between repetitions on one same series), and more.',
 				},
 			],
-			SocialSharingHeading: 'Share This',
+			// SocialSharingHeading: 'Share This',
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
