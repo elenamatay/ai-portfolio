@@ -14,7 +14,7 @@ export const projectsData = [
 		url: 'personal-trainer',
 		category: 'Side Projects',
 		img: '/images/gym-trainer-cover.png',
-		githubUrl: '',
+		githubUrl: 'https://github.com/elenamatay/personal-trainer-notebooks',
 		ProjectHeader: {
 			title: 'AI-Based Gym Personal Trainer',
 			publishDate: 'Jul 26, 2024',
@@ -90,7 +90,17 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						'2. Exercise Feedback: A multimodal model that provides personalized feedback on the exercise performance, comparing the user video to a reference video. This was the most successful part of the project. We used Gemini Flash 1.5 with prompt engineering. The model was able to provide detailed feedback on the exercise performance with ~90% accuracy. Feedback included the following categories: Form/technique, Tempo, Range of Movement, Fatigue Analysis (comparing the variation of the execution between repetitions on one same series), and more.',
+						'2. Exercise Feedback: Once the exercise has been recognised, a multimodal model provides personalized feedback on the exercise performance, comparing the user video to a reference video. This was the most successful part of the project. We used Gemini Flash 1.5 with prompt engineering. The model was able to provide detailed feedback on the exercise performance with ~90% accuracy. Feedback included the following categories: Form/technique, Tempo, Range of Movement, Fatigue Analysis (comparing the variation of the execution between repetitions on one same series), and more.',
+				},
+				{
+					id: uuidv4(),
+					details:
+						'Me and my friend Pablo -performing the SWE role- worked on this project in our free time for 6 months. We performed a Beta Phase with family and friends (20+ participants) who tried the webapp on 150+ videos in total and filled out a detailed <a href="https://docs.google.com/forms/d/e/1FAIpQLScLgpi8SF2Uq9vYyf-jF3K8NLxBjGLK70S0A_hxweEpWV6uuQ/viewform" target="_blank" rel="noopener noreferrer" classname="text-blue-500 underline">feedback form</a>. After the Beta phase, we decided to put the project on hold due to lack of availability from Pablo\'s side. Even so, we learnt a lot about multimodal models, embeddings, prompt engineering, and the Ionic Framework. I also learnt that exercise recognition is a more challenging problem than I anticipated. If we resume the project someday, we will need to re-evaluate different solutions depending on the new state of the art and find a solution for this problem (could be fine-tuning of a model like Gemini, a more traditional deep-learning classification model implementation, a more advanced embedding-based approach, or others).',
+				},
+				{
+					id: uuidv4(),
+					details:
+						'As we are open to continue the project in the future, the app code repository and the full AI pieces repository are private. If you are interested in the project, please contact me, I will be happy to share more details. I also published a public repository. You can access it with the button below. It contains some Jupyter Notebooks about the experiments I performed for the project.',
 				},
 			],
 			// SocialSharingHeading: 'Share This',
