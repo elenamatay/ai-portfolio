@@ -12,7 +12,7 @@ const projectsData = [
 		id: 1,
 		title: 'Gym Personal Trainer',
 		url: 'personal-trainer',
-		category: 'Side Projects',
+		category: ['Side Projects'],
 		img: '/images/gym-trainer-cover.png',
 		githubUrl: 'https://github.com/elenamatay/personal-trainer-notebooks',
 		ProjectHeader: {
@@ -142,7 +142,7 @@ const projectsData = [
 		id: 2,
 		title: 'Neural Style Transfer',
 		url: 'phoenix-digital-agency',
-		category: 'Learning',
+		category: ['Learning'],
 		img: '/images/neural-style-transfer-cover.png',
 		githubUrl: 'https://github.com/elenamatay/art-generation-neural-style-transfer',
 		ProjectHeader: {
@@ -220,9 +220,9 @@ const projectsData = [
 	},
 	{
 		id: 3,
-		title: 'AI Experiments Tracking',
+		title: 'Experiments Tracking',
 		url: 'vertex-ai-experiments',
-		category: 'Customers',
+		category: ['Customers'],
 		img: '/images/experiments-cover.png',
 		githubUrl: 'https://github.com/elenamatay/vertex-ai-experiments',
 		ProjectHeader: {
@@ -238,16 +238,16 @@ const projectsData = [
 			},
 		],
 		ProjectInfo: {
-			ClientHeading: 'About Client',
+			ClientHeading: 'About Project',
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Industry',
+					title: 'Customer Industry',
 					details: 'FSI',
 				},
 				{
 					id: uuidv4(),
-					title: 'Project',
+					title: 'Project Name',
 					details: 'ML Platform Advisory',
 				},
 				{
@@ -333,94 +333,81 @@ const projectsData = [
 	},
 	{
 		id: 4,
-		title: 'Cloud Storage Platform',
-		url: 'cloud-storage-platform',
-		category: 'UI/UX Design',
-		img: '/images/ui-project-2.jpg',
-		githubUrl: '',
+		title: 'Entity Resolution',
+		url: 'entity-matching-genai',
+		category: ['Customers', 'Side Projects'],
+		img: '/images/entity-resolution-cover.png',
+		githubUrl: 'https://github.com/elenamatay/entity-resolution/',
 		ProjectHeader: {
-			title: 'Cloud Storage Platform',
-			publishDate: 'Jul 26, 2021',
-			tags: 'Web & Cloud',
+			title: 'Entity Resolution leveraging GenAI',
+			publishDate: 'Aug 26, 2024',
+			tags: ["GenAI", "Entity Resolution", "RAG", "Embeddings", "Vector Search"],
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
-				title: 'Kabul Cloud Storage Platform',
-				img: '/images/ui-project-1.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Cloud Storage Platform',
-				img: '/images/neural-style-transfer.png',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Cloud Storage Platform',
-				img: '/images/mobile-project-2.jpg',
+				title: 'Entity Resolution Architecture on GCP',
+				img: '/images/entity-resolution-architecture.jpeg',
 			},
 		],
 		ProjectInfo: {
-			ClientHeading: 'About Client',
+			ClientHeading: 'About Project',
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
+					title: 'Customer Industry',
+					details: 'SaaS (Startup)',
 				},
 				{
 					id: uuidv4(),
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
+					title: 'Project Name',
+					details: 'AI Booster',
 				},
 				{
 					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
+					title: 'My Role',
+					details: 'AI Consultant (20%)',
 				},
 				{
 					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
+					title: 'Team Size',
+					details: '4 (Customer CEO, CTO, CDO, and myself)',
 				},
 			],
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+				'Recognise entities (products) and their attributes in thousands of retailers websites, then do entity resolution (similar to entity matching) to identify which products are the same accross retailers.',
 			Technologies: [
 				{
 					title: 'Tools & Technologies',
 					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
+						'Python',
+						'GenAI',
+						'VertexAI',
+						'LLMs',
+						'Multimodal',
+						'RAG',
+						'Embeddings',
+						'Vector Search',
 					],
 				},
 			],
-			ProjectDetailsHeading: 'Challenge',
+			ProjectDetailsHeading: 'Project Context and Sample Shared Details',
 			ProjectDetails: [
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'This was a 20% project for me. At Google, this means a project you do voluntarily to learn something new or have a new experience, fully separate from your work. The 20% project was called AI Booster, and it was a collaboration with spanish startups. These startups had an AI use case that they wanted to implement, and if selected, I designed the architecture and provided advisory for their engineers to implement a first version of the use case within one month. This specific project was for one of the great startups I worked with, which had a SaaS product around business intelligence for retailers.',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'The use case was using GenAI for Name Entity Recognition (NER - extracting and standarizing information about products in e-commerces) and resolution (ER - identifying matching identical products present in different websites or sources). The focus of my advisory was on the latter -ER area-, where they needed more help.',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'The code samples shared include two Jupyter Notebooks. The first one shows how to use the VertexAI SDKs to create and query a Vector Store using Vector Search. The second one shows how to perform advance Entity Resolution using filtering. Specifically, I create and deploy a ready-to-filter index based on metadata (e.g. product category), then perform queries using these filters, and lastly call Gemini to check which from top N retrieved neighbours are actually the same product.',
 				},
 			],
 			// SocialSharingHeading: 'Share This',
@@ -462,7 +449,7 @@ const projectsData = [
 		id: 5,
 		title: 'WeTalk Social Application',
 		url: 'wetalk-social-app',
-		category: 'Mobile Application',
+		category: ['Mobile Application'],
 		img: '/images/mobile-project-1.jpg',
 		githubUrl: '',
 		ProjectHeader: {
@@ -589,7 +576,7 @@ const projectsData = [
 		id: 6,
 		title: 'Apple New Design System',
 		url: 'apple-new-design-system',
-		category: 'Web Application',
+		category: ['Web Application'],
 		img: '/images/web-project-1.jpg',
 		githubUrl: '',
 		ProjectHeader: {
@@ -715,7 +702,7 @@ const projectsData = [
 	{
 		id: 7,
 		title: 'Face Recognition',
-		category: 'Learning',
+		category: ['Learning'],
 		img: '/images/face-recog-cover.png',
 		githubUrl: 'https://github.com/elenamatay/face-recognition',
 		ProjectHeader: {

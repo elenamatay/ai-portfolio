@@ -21,9 +21,9 @@ function ProjectsGrid() {
 	// });
 
 	const selectProjectsByCategory = projectsData.filter((item) => {
-		let category =
-			item.category.charAt(0).toUpperCase() + item.category.slice(1);
-		return category.includes(selectProject);
+		return item.category
+			.map(cat => cat.charAt(0).toUpperCase() + cat.slice(1))
+			.includes(selectProject);
 	});
 
 	return (
