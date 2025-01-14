@@ -90,7 +90,7 @@ function ProjectSingle(props) {
                             {props.project.ProjectInfo.CompanyInfo.map((info) => {
                                 return (
                                     <li
-                                        className="font-general-regular text-ternary-dark dark:text-ternary-light"
+                                        className="font-general-regular text-ternary-dark dark:text-ternary-light leading-normal mb-2"
                                         key={info.id}
                                     >
                                         <span className="leading-tight">{info.title}: </span>
@@ -167,15 +167,15 @@ function ProjectSingle(props) {
                 </div>
 
                 {/*  Single project right section details */}
-                <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-                    <p className="text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
+                <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0 project-details">
+                    <p className="text-2xl font-bold mb-7">
                         {props.project.ProjectInfo.ProjectDetailsHeading}
                     </p>
                     {projectDetails.map((details) => {
                         return (
                             <p
                                 key={details.id}
-                                className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light project-details"
+                                className="font-general-regular mb-5 text-lg"
                                 dangerouslySetInnerHTML={{ __html: details.details }}
                             ></p>
                         );
@@ -196,6 +196,17 @@ function ProjectSingle(props) {
             </div>
 
             <RelatedProjects />
+
+            <style jsx>{`
+                .project-details a {
+                    color: blue !important;
+                    text-decoration: underline !important;
+                }
+                .project-details a:hover {
+                    color: darkblue !important;
+                }
+            `}</style>
+
         </div>
     );
 }

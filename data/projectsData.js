@@ -7,7 +7,7 @@ import {
 	FiYoutube,
 } from 'react-icons/fi';
 
-export const projectsData = [
+const projectsData = [
 	{
 		id: 1,
 		title: 'Gym Personal Trainer',
@@ -95,7 +95,7 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						'Me and my friend Pablo -performing the SWE role- worked on this project in our free time for 6 months. We performed a Beta Phase with family and friends (20+ participants) who tried the webapp on 150+ videos in total and filled out a detailed <a href="https://docs.google.com/forms/d/e/1FAIpQLScLgpi8SF2Uq9vYyf-jF3K8NLxBjGLK70S0A_hxweEpWV6uuQ/viewform" target="_blank" rel="noopener noreferrer" classname="text-blue-500 underline">feedback form</a>. After the Beta phase, we decided to put the project on hold due to lack of availability from Pablo\'s side. Even so, we learnt a lot about multimodal models, embeddings, prompt engineering, and the Ionic Framework. I also learnt that exercise recognition is a more challenging problem than I anticipated. If we resume the project someday, we will need to re-evaluate different solutions depending on the new state of the art and find a solution for this problem (could be fine-tuning of a model like Gemini, a more traditional deep-learning classification model implementation, a more advanced embedding-based approach, or others).',
+						'Me and my friend Pablo -performing the SWE role- worked on this project in our free time for 6 months. We performed a Beta Phase with family and friends (20+ participants) who tried the webapp on 150+ videos in total and filled out a detailed <a href="https://docs.google.com/forms/d/e/1FAIpQLScLgpi8SF2Uq9vYyf-jF3K8NLxBjGLK70S0A_hxweEpWV6uuQ/viewform" target="_blank" rel="noopener noreferrer" className="project-details">feedback form</a>. After the Beta phase, we decided to put the project on hold due to lack of availability from Pablo\'s side. Even so, we learnt a lot about multimodal models, embeddings, prompt engineering, and the Ionic Framework. I also learnt that exercise recognition is a more challenging problem than I anticipated. If we resume the project someday, we will need to re-evaluate different solutions depending on the new state of the art and find a solution for this problem (could be fine-tuning of a model like Gemini, a more traditional deep-learning classification model implementation, a more advanced embedding-based approach, or others).',
 				},
 				{
 					id: uuidv4(),
@@ -220,31 +220,21 @@ export const projectsData = [
 	},
 	{
 		id: 3,
-		title: 'Project Management UI',
-		url: 'project-management-ui',
-		category: 'UI/UX Design',
-		img: '/images/ui-project-1.jpg',
-		githubUrl: '',
+		title: 'AI Experiments Tracking',
+		url: 'vertex-ai-experiments',
+		category: 'Customers',
+		img: '/images/experiments-cover.png',
+		githubUrl: 'https://github.com/elenamatay/vertex-ai-experiments',
 		ProjectHeader: {
-			title: 'Project Management UI',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
+			title: 'Tracking Experiments with Vertex AI',
+			publishDate: 'Apr 13, 2023',
+			tags: ['Machine Learning', 'Vertex AI', 'Google Cloud'],
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
 				title: 'Kabul Project Management UI',
-				img: '/images/ui-project-1.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Project Management UI',
-				img: '/images/neural-style-transfer.png',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Project Management UI',
-				img: '/images/mobile-project-2.jpg',
+				img: '/images/experiments.jpeg',
 			},
 		],
 		ProjectInfo: {
@@ -252,65 +242,61 @@ export const projectsData = [
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
+					title: 'Industry',
+					details: 'FSI',
 				},
 				{
 					id: uuidv4(),
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
+					title: 'Project',
+					details: 'ML Platform Advisory',
 				},
 				{
 					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
+					title: 'My Role',
+					details: 'AI Consultant',
 				},
 				{
 					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
+					title: 'Team Size',
+					details: '18 Engineers (Google + Customer)',
 				},
 			],
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+				'Keep track and analyze different ML model architectures, hyperparameters, and training environments.',
 			Technologies: [
 				{
 					title: 'Tools & Technologies',
 					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
+						'Vertex AI',
+						'Google Cloud',
+						'Machine Learning',
+						'Scikit-learn',
+						'LGBM',
+						'XGBoost',
+						'Boosted trees',
 					],
 				},
 			],
-			ProjectDetailsHeading: 'Challenge',
+			ProjectDetailsHeading: 'Project Context and Sample Shared Details',
 			ProjectDetails: [
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'I developed this code sample to support my team (Google engineers) in the technical delivery for a project I was leading. The project objective was to advise an FSI customer in migrating their ML platform from on-prem to Google Cloud. The seven-month project involved guiding the customer in building the cloud-based ML Platform where dozens of use cases would live, including the deployment of the first three use cases. I led the project, managed the customer relationship, oversaw the Google team\'s work, and ensured on-time, on-budget delivery with 100% customer satisfaction (as measured by the CSAT survey).',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'The project spanned many areas of the MLOps lifecycle, but my primary technical contribution was in Experiments and Explainable AI. This particular sample focuses on Experiments Tracking. The customer needed to track and analyze different ML model architectures, hyperparameters, and training environments. I decided to use Vertex AI Experiments autologging feature, a one-line code SDK capability which leverages MLflow to provide automatic metrics and parameters tracking, to fulfill this need. I delivered a technical workshop where I showed the customer how to use the feature and performed a live demo. Then, we did a hands-on session where each engineer from the customer side created a new experiment, trained a model for a real use case on the customer data, logged and analyzed the results.',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'The live demo was conducted with the notebook present in the below repo. It\'s a modified version of a Google Cloud official tutorial, where I adapted the models trained to make it more realistic and useful for the customer. The original tutorial trains three models: a scikit-learn one, a Tensorflow one, and a PyTorch one, and logs the results of the training experiments. This customer didn\'t have expertise in Deep Learning and wanted an example of logging experiments with frameworks they were familiar with. I adapted a Jupyter Notebook that uses the Vertex AI Python SDK to create a new experiment, train five simple models (one scikit-learn, one LGBM, and three XGBoost models with different hyperparameters), and log the results to be reviewed later in the Vertex AI Experiments UI.',
 				},
 			],
-			SocialSharingHeading: 'Share This',
+			// SocialSharingHeading: 'Share This',
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
@@ -437,7 +423,7 @@ export const projectsData = [
 						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
 				},
 			],
-			SocialSharingHeading: 'Share This',
+			// SocialSharingHeading: 'Share This',
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
@@ -564,7 +550,7 @@ export const projectsData = [
 						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
 				},
 			],
-			SocialSharingHeading: 'Share This',
+			// SocialSharingHeading: 'Share This',
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
@@ -691,7 +677,7 @@ export const projectsData = [
 						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
 				},
 			],
-			SocialSharingHeading: 'Share This',
+			// SocialSharingHeading: 'Share This',
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
@@ -820,3 +806,5 @@ export const projectsData = [
 		},
 	},
 ];
+
+export { projectsData };

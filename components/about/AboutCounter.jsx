@@ -29,7 +29,7 @@ function AboutCounter() {
 				/>
 
 				<CounterItem
-					title="Projects led"
+					title="AI Projects led"
 					counter={<span id="projectsCounter" />}
 					measurement=""
 				/>
