@@ -56,23 +56,30 @@ function ProjectSingle(props) {
                         : ''
                 } sm:gap-10 mt-12`}
             >
-                {props.project.ProjectImages.map((project) => {
+                {props.project.ProjectImages.map((media) => {
                     return (
                         <div
                             className={`mb-10 sm:mb-0 ${
                                 props.project.ProjectImages.length === 1 ? 'w-full' : ''
                             }`}
-                            key={project.id}
+                            key={media.id}
                         >
-                            <Image
-                                src={project.img}
-                                className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-                                alt={project.title}
-                                key={project.id}
-                                layout="responsive"
-                                width={100}
-                                height={90}
-                            />
+                            {media.type === 'image' ? (
+                                <Image
+                                    src={media.src}
+                                    className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+                                    alt={media.title}
+                                    key={media.id}
+                                    layout="responsive"
+                                    width={100}
+                                    height={90}
+                                />
+                            ) : (
+                                <video controls className="rounded-xl cursor-pointer shadow-lg sm:shadow-none">
+                                    <source src={media.src} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            )}
                         </div>
                     );
                 })}
@@ -168,16 +175,16 @@ function ProjectSingle(props) {
 
                 {/*  Single project right section details */}
                 <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0 project-details">
-                    <p className="text-2xl font-bold mb-7">
+                    <p className="text-2xl font-bold mb-7 text-primary-dark dark:text-primary-light">
                         {props.project.ProjectInfo.ProjectDetailsHeading}
                     </p>
                     {projectDetails.map((details) => {
                         return (
-                            <p
+                            <div
                                 key={details.id}
                                 className="font-general-regular mb-5 text-lg"
                                 dangerouslySetInnerHTML={{ __html: details.details }}
-                            ></p>
+                            ></div>
                         );
                     })}
                 </div>

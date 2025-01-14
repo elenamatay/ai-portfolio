@@ -24,7 +24,8 @@ const projectsData = [
 			{
 				id: uuidv4(),
 				title: 'Gym Personal Trainer',
-				img: '/images/gym-trainer.png',
+                                 type: 'image',
+                                 src: '/images/gym-trainer.png',
 			},
 		],
 		ProjectInfo: {
@@ -154,7 +155,8 @@ const projectsData = [
 			{
 				id: uuidv4(),
 				title: 'Art Generation with Neural Style Transfer',
-				img: '/images/neural-style-transfer.png',
+                                 type: 'image',
+                                 src: '/images/neural-style-transfer.png',
 			},
 		],
 		ProjectInfo: {
@@ -233,8 +235,9 @@ const projectsData = [
 		ProjectImages: [
 			{
 				id: uuidv4(),
-				title: 'Kabul Project Management UI',
-				img: '/images/experiments.jpeg',
+				title: 'Experiments',
+                                 type: 'image',
+                                 src: '/images/experiments.jpeg',
 			},
 		],
 		ProjectInfo: {
@@ -347,7 +350,8 @@ const projectsData = [
 			{
 				id: uuidv4(),
 				title: 'Entity Resolution Architecture on GCP',
-				img: '/images/entity-resolution-architecture.jpeg',
+                                 type: 'image',
+                                 src: '/images/entity-resolution-architecture.jpeg',
 			},
 		],
 		ProjectInfo: {
@@ -447,94 +451,106 @@ const projectsData = [
 	},
 	{
 		id: 5,
-		title: 'WeTalk Social Application',
-		url: 'wetalk-social-app',
-		category: ['Mobile Application'],
-		img: '/images/mobile-project-1.jpg',
-		githubUrl: '',
+		title: 'Baby Names Finder',
+		url: 'baby-names-finder',
+		category: ['Side Projects'],
+		img: '/images/baby-names-finder-cover.png',
+		githubUrl: 'https://github.com/elenamatay/baby-names-genai',
 		ProjectHeader: {
-			title: 'WeTalk Social Application',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
+			title: 'AI-Powered Baby Names Finder',
+			publishDate: 'Oct 15, 2023',
+			tags: ['GenAI', 'Full-Stack', 'NextJS', 'TailwindCSS'],
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
-				title: 'WeTalk Social Application',
-				img: '/images/ui-project-1.jpg',
+				title: 'Product demo',
+                type: 'video',
+				src: "https://storage.googleapis.com/thename_web_media_us/video-ui-form.mp4",
 			},
 			{
 				id: uuidv4(),
-				title: 'WeTalk Social Application',
-				img: '/images/neural-style-transfer.png',
+				title: 'Baby names web UI',
+				type: 'image',
+				src: '/images/baby-names-ui.png',
 			},
 			{
 				id: uuidv4(),
-				title: 'WeTalk Social Application',
-				img: '/images/mobile-project-2.jpg',
+				title: 'Baby names decoration mockup',
+				type: 'image',
+				src: '/images/baby-names-mockup.png',
 			},
 		],
 		ProjectInfo: {
-			ClientHeading: 'About Client',
+			ClientHeading: 'About Project',
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
+					title: 'Timeline',
+					details: 'Jan 2024 - Oct 2024',
 				},
 				{
 					id: uuidv4(),
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
+					title: 'Format',
+					details: 'Webapp',
 				},
 				{
 					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
+					title: 'Status',
+					details: 'In Production',
 				},
 				{
 					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
+					title: 'Team Size',
+					details: '1',
+				},
+				{
+					id: uuidv4(),
+					title: 'My Role',
+					details: 'PM, Full-Stack Developer, AI Engineer',
 				},
 			],
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+				'Help users find the perfect name for an upcoming baby based on their family\'s values and preferences.',
 			Technologies: [
 				{
 					title: 'Tools & Technologies',
 					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
+						'NextJS',
 						'TailwindCSS',
-						'AdobeXD',
+						'DaisyUI',
+						'Google Cloud',
+						'MongoDB',
+						'Vercel',
+						'Next-auth',
+						'Google Auth',
+						'Stripe',
+						'Mailgun',
 					],
 				},
 			],
-			ProjectDetailsHeading: 'Challenge',
+			ProjectDetailsHeading: 'Challenge, Solution, Lessons Learnt and Next Steps',
 			ProjectDetails: [
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'The project aims to help users find the perfect name for an upcoming baby based on their family\'s values and preferences. To achieve this, we needed a solid database of baby names. We started with a Kaggle dataset of registered names worldwide and used Gemini (model available through Vertex AI SDK) to generate a synthetic database enriched with various attributes such as meaning, origin, and sound details.',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'Based on user input from a questionnaire/form, the project filters the data and makes another call to Gemini AI to find the most suitable names for a family.',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'The project includes a much larger repository of files, but the sample data shared in this portfolio includes only two key files, both of them using Gemini\'s GenAI capabilities. The first is a Jupyter notebook outlining the process of creating a synthetic dataset for girl names, and the second is a script responsible for finding the ideal baby names based on user input.',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'The stack used for this project includes NextJS as a programming framework, TailwindCSS and DaisyUI for the front-end part, MongoDB as the database, Vercel for hosting, Next-auth and Google Auth for authentication, Stripe for payments handling, Mailgun for mail sending, and Google Cloud products for the AI part.',
 				},
 			],
 			// SocialSharingHeading: 'Share This',
@@ -574,133 +590,6 @@ const projectsData = [
 	},
 	{
 		id: 6,
-		title: 'Apple New Design System',
-		url: 'apple-new-design-system',
-		category: ['Web Application'],
-		img: '/images/web-project-1.jpg',
-		githubUrl: '',
-		ProjectHeader: {
-			title: 'Apple New Design System',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
-		},
-		ProjectImages: [
-			{
-				id: uuidv4(),
-				title: 'Kabul Apple New Design System',
-				img: '/images/ui-project-1.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Apple New Design System',
-				img: '/images/neural-style-transfer.png',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Apple New Design System',
-				img: '/images/mobile-project-2.jpg',
-			},
-		],
-		ProjectInfo: {
-			ClientHeading: 'About Client',
-			CompanyInfo: [
-				{
-					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
-				},
-				{
-					id: uuidv4(),
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
-				},
-				{
-					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
-				},
-				{
-					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
-				},
-			],
-			ObjectivesHeading: 'Objective',
-			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-			Technologies: [
-				{
-					title: 'Tools & Technologies',
-					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
-					],
-				},
-			],
-			ProjectDetailsHeading: 'Challenge',
-			ProjectDetails: [
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-			],
-			// SocialSharingHeading: 'Share This',
-			// SocialSharing: [
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Twitter',
-			// 		icon: <FiTwitter />,
-			// 		url: 'https://twitter.com/realstoman',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Instagram',
-			// 		icon: <FiInstagram />,
-			// 		url: 'https://instagram.com/realstoman',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Facebook',
-			// 		icon: <FiFacebook />,
-			// 		url: 'https://facebook.com/',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'LinkedIn',
-			// 		icon: <FiLinkedin />,
-			// 		url: 'https://linkedin.com/',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Youtube',
-			// 		icon: <FiYoutube />,
-			// 		url: 'https://www.youtube.com/c/StomanStudio',
-			// 	},
-			// ],
-		},
-	},
-	{
-		id: 7,
 		title: 'Face Recognition',
 		category: ['Learning'],
 		img: '/images/face-recog-cover.png',
@@ -714,12 +603,14 @@ const projectsData = [
 			{
 				id: uuidv4(),
 				title: 'Face Recognition System',
-				img: '/images/face-recog-2.png',
+                                 type: 'image',
+                                 src: '/images/face-recog-2.png',
 			},
 			{
 				id: uuidv4(),
 				title: 'Face Recognition System',
-				img: '/images/face-recog-3.png',
+                                 type: 'image',
+                                 src: '/images/face-recog-3.png',
 			},
 		],
 		ProjectInfo: {
