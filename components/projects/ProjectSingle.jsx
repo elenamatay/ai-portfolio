@@ -28,7 +28,8 @@ const ProjectSingle = (props) => {
 							className="rounded-t-xl border-none"
 							alt="Single Project"
 							layout="responsive"
-
+							width={100}
+							height={90}
 						/>
 					</div>
 					<div className="text-center px-4 py-6">
