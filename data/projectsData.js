@@ -683,6 +683,110 @@ const projectsData = [
 			],
 		},
 	},
+	{
+		id: 7,
+		title: 'Deep Learning on Forest Images',
+		url: 'deep-learning-forest-satellite-images',
+		category: ['Customers'],
+		img: '/images/deep-learning-forest-satellite-images.png',
+		githubUrl: 'https://github.com/elenamatay/deep-learning-forest-satellite-images',
+		ProjectHeader: {
+			title: 'Monitoring Afforestation with Deep Learning',
+			publishDate: 'Oct 25, 2024',
+			tags: ['Deep Learning', 'Computer Vision', 'CNNs', 'TensorFlow', 'Keras', 'Vertex AI', 'Google Cloud'],
+		},
+		ProjectImages: [
+			{
+				id: uuidv4(),
+				title: 'Experiments',
+				type: 'image',
+				src: '/images/deep-learning-forest-satellite-images-cover.png',
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: 'About Project',
+			CompanyInfo: [
+				{
+					id: uuidv4(),
+					title: 'Customer Industry',
+					details: 'Energy',
+				},
+				{
+					id: uuidv4(),
+					title: 'Project Name',
+					details: 'Deep Learning for Afforestation',
+				},
+				{
+					id: uuidv4(),
+					title: 'My Role',
+					details: 'AI Consultant',
+				},
+				{
+					id: uuidv4(),
+					title: 'Team Size',
+					details: '6 Engineers and Researchers (Google + Customer)',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails:
+				'Analyze forest high-resolution satellite imagery for sustainability purposes.',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						'Vertex AI',
+						'Google Cloud',
+						'Tensorflow',
+						'Keras',
+					],
+				},
+			],
+			ProjectDetailsHeading: 'Project Context and Sample Shared Details',
+			ProjectDetails: [
+				{
+					id: uuidv4(),
+					details:
+						'This project leverages deep learning to analyze forest high-resolution satellite imagery for sustainability purposes. Our aim with our trained models is to produce accurate tree crown segmentation, tree counting, and height predictions. This predicted data is later used by our customer to compute Above-Ground Biomass (AGB), a key indicator for carbon storage.'
+				},
+				{
+					id: uuidv4(),
+					details:
+						'Our approach to develop such models is inspired by the research paper by Li et al., 2023, which successfully implemented a similar solution using a U-Net architecture. We built upon this foundation with the objective to improve their results by utilizing higher-resolution data and Google Cloud\'s powerful tools to enhance scalability and efficiency.'
+				},
+				{
+					id: uuidv4(),
+					details:
+						'The primary objective of our training process was to develop accurate and efficient deep learning models capable of:'
+				},
+				{
+					id: uuidv4(),
+					details:						
+						'1. Segment and count trees',
+				},
+				{
+					id: uuidv4(),
+					details:						
+						'2. Predict tree height',
+				},
+				{
+					id: uuidv4(),
+					details:
+						'A separate model is available to perform each of the two above tasks. Both models are based on the U-Net architecture, a convolutional neural network (CNN) specifically designed for image segmentation tasks. The U-Net architecture was chosen for its proven effectiveness in image segmentation tasks and its versatility for future computer vision projects.'
+				},
+				{
+					id: uuidv4(),
+					details:
+						'My main technical contribution was on the tree height model, particularly on experimenting and evaluating the training process using a different loss function: Huber loss. Huber loss combines MSE and MAE: like MSE, it penalizes small errors quadratically, but for larger errors, it behaves like MAE, penalizing them linearly. For this particular task, Huber loss proved to be the winner loss function on our larger dataset, given our evaluation criteria (reducing the absolute error in terms of tree height).'
+				},
+				{
+					id: uuidv4(),
+					details:						
+						'While the project already finished successfully, the whole code repository has not been made public for the moment. Therefore I can only share a little code snippet (loss functions file) and the project details here.',
+				},
+
+			],
+		},
+	},
 ];
 
 export { projectsData };
