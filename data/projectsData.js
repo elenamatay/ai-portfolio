@@ -81,7 +81,7 @@ const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						'The goal was to create an AI-powered tool that analyzes video recordings of strength exercises to provide personalized feedback, helping users improve performance and reduce injury risk. In order to do this, two main AI-based components were developed:',
+						'The goal of this side project was to create an AI-powered tool that analyzes video recordings of strength exercises to provide personalized feedback, helping users improve performance and reduce injury risk. In order to do this, two main AI-based components were developed:',
 				},
 				{
 					id: uuidv4(),
