@@ -8,7 +8,7 @@ const contacts = [
 	},
 	{
 		id: 2,
-		name: 'elenamatay@gmail.com',
+		name: 'hi@elenamatay.com',
 		icon: <FiMail />,
 	},
 	// {

@@ -1,6 +1,6 @@
 const selectOptions = [
 	'Side Projects',
-	'Tech Talks & Articles',
+	// 'Tech Talks & Articles', // Commenting until content is available
 	'Customers',
 	'Learning',
 ];

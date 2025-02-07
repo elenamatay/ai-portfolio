@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
 import HireMeModal from '../HireMeModal';
@@ -12,6 +13,12 @@ function AppHeader() {
 	const [showMenu, setShowMenu] = useState(false);
 	const [showModal, setShowModal] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
+
+	const router = useRouter();
+
+    const handleContactRedirect = () => {
+        router.push('/contact');
+    };
 
 	function toggleMenu() {
 		if (!showMenu) {
@@ -122,14 +129,15 @@ function AppHeader() {
 							About Me
 						</Link>
 					</div>
-					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
+					{/* <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<Link href="/contact" aria-label="Contact">
 							Contact
 						</Link>
-					</div>
+					</div> */}
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<button
-							onClick={showHireMeModal}
+							// onClick={showHireMeModal} // Changing the hire me popup to the contact page
+							onClick={handleContactRedirect}
 							className="font-general-medium sm:hidden block text-left text-md bg-red-900 hover:bg-orange-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
 							aria-label="Contact Me Button"
 						>
@@ -153,20 +161,21 @@ function AppHeader() {
 						<Link href="/about">About Me</Link>
 					</div>
 
-					<div
+					{/* <div
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Contact"
 					>
 						<Link href="/contact">Contact</Link>
-					</div>
+					</div> */}
 				</div>
 
 				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-					<div className="hidden md:flex">
+					<div className="hiddenflex">
 						<button
-							onClick={showHireMeModal}
-							className="text-md font-general-medium bg-red-900 hover:bg-orange-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+							// onClick={showHireMeModal} // Changing the hire me popup to the contact page
+							onClick={handleContactRedirect}
+							className="text-md rounded-md font-general-medium bg-red-900 hover:bg-orange-600 text-white  px-5 py-2.5 duration-300"
 							aria-label="Contact Me Button"
 						>
 							Contact Me

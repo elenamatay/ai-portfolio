@@ -96,19 +96,15 @@ function HireMeModal({ onClose, onRequest }) {
 									></textarea>
 								</div>
 
-								<div className="mt-6 pb-4 sm:pb-1">
+								<div className="mt-6">
 									<span
 										onClick={onRequest}
 										type="submit"
-										className="px-4
-											sm:px-6
-											py-2
-											sm:py-2.5
+										className="
 											text-white
 											bg-red-900
 											hover:bg-orange-600
-											rounded-md
-											focus:ring-1 focus:ring-indigo-900 duration-500"
+											rounded-md"
 										aria-label="Submit Request"
 									>
 										<Button title="Send Request" />
@@ -120,11 +116,7 @@ function HireMeModal({ onClose, onRequest }) {
 							<span
 								onClick={onClose}
 								type="button"
-								className="px-4
-									sm:px-6
-									py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light
-									rounded-md
-									focus:ring-1 focus:ring-indigo-900 duration-500"
+								className="text-white bg-red-900 rounded-md"
 								aria-label="Close Modal"
 							>
 								<Button title="Close" />

@@ -685,7 +685,7 @@ const projectsData = [
 	},
 	{
 		id: 7,
-		title: 'Deep Learning on Forest Images',
+		title: 'Forestry U-Nets',
 		url: 'deep-learning-forest-satellite-images',
 		category: ['Customers'],
 		img: '/images/deep-learning-forest-satellite-images.png',
