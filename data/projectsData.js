@@ -787,6 +787,83 @@ const projectsData = [
 			],
 		},
 	},
+	{
+		id: 8,
+		title: 'Transformers for NLP',
+		url: 'transformers-nlp-course',
+		category: ['Learning'],
+		img: '/images/transformers.png',
+		githubUrl: 'https://github.com/elenamatay/transformers-for-nlp',
+		ProjectHeader: {
+			title: 'Mastering Transformers for NLP',
+			publishDate: 'Jun 10, 2023',
+			tags: ['Transformers', 'NLP', 'Deep Learning', 'Machine Learning', 'Hugging Face', 'PyTorch'],
+		},
+		ProjectImages: [
+			{
+				id: uuidv4(),
+				title: 'Course Overview',
+				type: 'image',
+				src: '/images/attention-is-all-you-need.png',
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: 'About Course',
+			CompanyInfo: [
+				{
+					id: uuidv4(),
+					title: 'Course',
+					details: 'Transformers for NLP',
+				},
+				{
+					id: uuidv4(),
+					title: 'Entity',
+					details: 'Lazy Programmer (at Udemy)',
+				},
+				{
+					id: uuidv4(),
+					title: 'Course info',
+					details: 'https://www.udemy.com/course/data-science-transformers-nlp/',
+				},
+				{
+					id: uuidv4(),
+					title: 'Repository',
+					details: 'https://github.com/elenamatay/transformers-for-nlp',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails: 'To learn the foundations and practical applications of transformers in natural language processing (NLP).',
+			Technologies: [
+				{
+					title: 'Technologies',
+					techs: ['Transformers', 'NLP', 'Deep Learning', 'Machine Learning', 'Hugging Face', 'PyTorch'],
+				},
+			],
+			ProjectDetailsHeading: 'Course Details',
+			ProjectDetails: [
+				{
+					id: uuidv4(),
+					details: 'In this course, I learned the foundations and practical applications of transformers in NLP. The course was divided into three major parts: Using Transformers, Fine-Tuning Transformers, and Transformers In-Depth.',
+				},
+				{
+					id: uuidv4(),
+					details: 'In the first part, I explored how to use pre-trained transformers for various tasks such as text classification, named entity recognition, text summarization, machine translation, question-answering, and zero-shot classification.',
+				},
+				{
+					id: uuidv4(),
+					details: 'In the second part (the one showcased in my Github repo), I learned how to fine-tune transformers on custom datasets to improve their performance on specific tasks like sentiment analysis and spam detection.',
+				},
+				{
+					id: uuidv4(),
+					details: 'The final part provided an in-depth understanding of the inner workings of transformers, including models like BERT, GPT, GPT-2, GPT-3, and GPT-4.',
+				},
+				{
+					id: uuidv4(),
+					details: 'This comprehensive course equipped me with both practical skills and theoretical knowledge to leverage transformers effectively in real-world applications.',
+				},
+			],
+		}
+	},
 ];
 
 export { projectsData };
