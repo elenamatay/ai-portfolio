@@ -182,7 +182,7 @@ function ProjectSingle(props) {
                         return (
                             <div
                                 key={details.id}
-                                className="font-general-regular mb-5 text-lg"
+                                className="font-general-regular mb-5 text-lg text-primary-dark dark:text-primary-light"
                                 dangerouslySetInnerHTML={{ __html: details.details }}
                             ></div>
                         );
@@ -202,7 +202,7 @@ function ProjectSingle(props) {
                 </div>
             </div>
 
-            <RelatedProjects />
+            {/* <RelatedProjects /> */}
 
             <style jsx>{`
                 .project-details a {
